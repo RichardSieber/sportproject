@@ -9,7 +9,7 @@ import Main from './register/Main';
 import { BrowserRouter } from "react-router-dom";
 
 import CsvReader from "./csvHandler/CsvReader.jsx";
-
+/*
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
@@ -26,7 +26,7 @@ ReactDOM.render(
         </BrowserRouter>
     </React.StrictMode>,
     document.getElementById("root")
-);
+);*/
 ReactDOM.render(
   <React.StrictMode>
     <App />
