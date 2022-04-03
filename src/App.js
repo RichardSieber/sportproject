@@ -1,33 +1,28 @@
 import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import Main from './register/Main';
+import Trainingsheet from './components/Trainingsheet';
 //import LoginBox from './register/LoginBox';
 //import RegisterBox from './register/RegisterBox';
 
 
 
+
 function App() {
   return (
-    <div className="App">
+    <div >
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        Trainingapp
       </header>
+    
+      <div>
+      <Trainingsheet />
 
-      <body>
-      <Main/>
-      </body>
-
+      </div>
+      <footer className='app-footer'>
+      &copy; Copyright 2022
+      </footer>
 
     </div>
   );
