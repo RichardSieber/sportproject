@@ -1,5 +1,6 @@
 import React from 'react'
 import Likert from 'react-likert-scale';
+<<<<<<< HEAD
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel  from '@material-ui/core/FormControlLabel';
@@ -10,6 +11,9 @@ import Trainingsheet from './Trainingsheet';
 import { textAlign } from '@mui/system';
 
 /*
+=======
+
+>>>>>>> 96650d024d496e16b9084078982eb1cf472fc7ca
 export const Likertsskala = () => {
   const likertOptions = {
     
@@ -18,7 +22,11 @@ export const Likertsskala = () => {
       { value: 2, text: "Ungenügend (2)" },
       { value: 3, text: "Ausreichend (3)" },
       { value: 4, text: "Gut  (4)" },
+<<<<<<< HEAD
       { value: 5, text: "Sehr Gut (5)" },S
+=======
+      { value: 5, text: "Sehr Gut (5)" },
+>>>>>>> 96650d024d496e16b9084078982eb1cf472fc7ca
       { value: 6, text: "Hervorragend (6)" }
     ],
     onChange: val => {
@@ -28,6 +36,7 @@ export const Likertsskala = () => {
   return (
     <Likert {...likertOptions} />
   )
+<<<<<<< HEAD
 }*/
 
 const Radiobutton = () => {
@@ -47,3 +56,6 @@ const Radiobutton = () => {
     )
 }
 export default Radiobutton
+=======
+}
+>>>>>>> 96650d024d496e16b9084078982eb1cf472fc7ca

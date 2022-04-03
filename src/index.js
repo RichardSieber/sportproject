@@ -18,6 +18,10 @@ ReactDOM.render(
     </React.StrictMode>,
     document.getElementById("root")
 );
+<<<<<<< HEAD
+=======
+
+>>>>>>> 96650d024d496e16b9084078982eb1cf472fc7ca
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>

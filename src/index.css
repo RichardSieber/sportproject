@@ -18,6 +18,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   background-color: white;
+<<<<<<< HEAD
+=======
+}
+
+#root {
+  /*flex-grow: 1;
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+}
+.App {
+  width: 100%;
+  max-width: 800px;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid black;
+  box-shadow: 0px 0px 15px gray;
+>>>>>>> 96650d024d496e16b9084078982eb1cf472fc7ca
 }
 
 #root {

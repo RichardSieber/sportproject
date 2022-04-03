@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 import DbFunctions from './DbFunctions';
 import { Likertsskala } from './Likertsskala'
 import Radiobutton from './Likertsskala';
@@ -36,20 +37,59 @@ const Trainingsheet = () => {
             required
 
         />
+=======
+import { Likertsskala } from './Likertsskala'
+import './Trainingsheet.css' 
+
+const Trainingsheet = () => {
+  const [name, setName] = React.useState('');
+
+
+  const handleNameChange = (event) => {
+    setName(event.target.value);
+  };
+     
+    return (  
+    <>
+      <br></br>
+      <div className='app-dropdown' >
+      <Dropdown 
+        label="Bitte einen Namen auswählen!  "
+        options={[
+          { label: 'A', value: 'a' },
+          { label: 'B', value: 'b' },
+          { label: 'C', value: 'c' },
+        ]}
+        value={name}
+        onChange={handleNameChange}
+      />
+      </div>
+      <h2>
+        Trainingsqualität von {name} 
+      </h2>
+      <div >
+      <Likertsskala />
+>>>>>>> 96650d024d496e16b9084078982eb1cf472fc7ca
       </div>
       <h2>
         geplante Trainingsintensität der Trainingseinheit
       </h2>
+<<<<<<< HEAD
       <div className='app-radiobutton'>
         <TIntensityPlanned 
             onChange={(e) => setPlanIntensity(e.target.value)} 
             required
  
         />
+=======
+      <div >
+        <Likertsskala />
+>>>>>>> 96650d024d496e16b9084078982eb1cf472fc7ca
       </div>
       <h2>
         erreichte Trainingsintensität der Trainingseinheit
       </h2>
+<<<<<<< HEAD
       <div className='app-radiobutton'>
         <TIntensityAchieved 
             required
@@ -85,6 +125,18 @@ const TIntensityAchieved = () => {
         <Radiobutton/>
     )
 }
+=======
+      <div>
+        <Likertsskala />
+      </div>
+      <button onClick={"You clicked a button!"}>
+        Fertig
+      </button>
+ 
+    </>
+  )
+}
+>>>>>>> 96650d024d496e16b9084078982eb1cf472fc7ca
 const Dropdown = ({ label, value, options, onChange }) => {
   return (
     <label>
