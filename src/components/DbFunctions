@@ -1,0 +1,47 @@
+import React from 'react'
+import Athletes from '../athletes.json'
+import Sheets from '../tests.json'
+
+const DbFunctions = () => {
+  return (
+    <div>
+        <Names/>
+        <TRsheet />
+    </div>
+  )
+}
+const Names = () => {
+    return(  
+        <div>
+        {
+            Athletes && Athletes.map( athlet => {
+                return(
+                    <div key={ athlet.id }>
+                        {athlet.name}
+                    </div>
+                )
+            })
+        }
+        </div>
+    );
+};
+const TRsheet = () => {
+    return(
+        <div>
+        {
+            Sheets && Sheets.map( sheet => {
+                return(
+                    <div key={sheet.tId}> 
+                        {sheet.athlet.name}                     
+                        {sheet.athlet.id}                           
+                        {sheet.quality}
+                        {sheet.plannedIntensity}
+                        {sheet.achievedIntensity}
+                    </div>    
+                )
+            })
+        }
+        </div>
+    );
+};
+export default DbFunctions

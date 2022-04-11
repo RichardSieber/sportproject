@@ -1,0 +1,23 @@
+[
+    {
+        "tId": 10,
+        "athlet": {
+            "name":"Delta" ,
+            "id": 4
+        }
+        ,
+        "quality": 5,
+        "plannedIntensity": 5,
+        "achievedIntensity": 5
+    },
+    {
+        "tId": 11,
+        "athlet": {
+            "name":"Alpha" ,
+            "id": 1
+    },
+        "quality": 2,
+        "plannedIntensity": 2,
+        "achievedIntensity": 2
+    }
+]
