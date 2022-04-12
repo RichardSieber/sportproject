@@ -21,6 +21,17 @@ const Trainingsheet = () => {
       setRating(event.target.value)
     }
     
+    const onChangeValue=(event)=>{
+      console.log(event.target.value)
+    }
+    const onClickValue=()=>{
+      var eleq = document.getElementsByName('quality');
+      for(var i=0; i<eleq.length;i++){
+        if(eleq[i].checked){
+          console.log(eleq[i].value)
+        }
+      }
+    }
      const handleSubmit = (e) => {
          e.preventDefault()
          
@@ -48,12 +59,15 @@ const Trainingsheet = () => {
         Trainingsqualität von Athlet X
       </h2>
       <div className='app-radiobutton'>
-      <TQuality
-            value={quality}
-            onChange={(e) => setQuality(e.target.value)}
-            required
-            
-        />
+
+      </div>
+      <div className ='app-radiobutton' onChange={onChangeValue}>
+        <input type="radio" value="1" name="quality" /> 1
+        <input type="radio" value="2" name="quality" /> 2
+        <input type="radio" value="3" name="quality" /> 3
+        <input type="radio" value="4" name="quality" /> 4
+        <input type="radio" value="5" name="quality" /> 5
+        <input type="radio" value="6" name="quality" /> 6
       </div>
       <h2>
         geplante Trainingsintensität der Trainingseinheit
@@ -79,11 +93,12 @@ const Trainingsheet = () => {
       </div>
          <br>
         </br>
- 
+
         <Button 
             type="submit"
             color="default"
             variant="contained"
+            onClick={onClickValue}
         >
             Fertig
         </Button>
@@ -96,6 +111,12 @@ const Trainingsheet = () => {
   )
 }
 const TQuality = () => {
+  /*      <TQuality
+            value={quality}
+            onChange={(e) => setQuality(e.target.value)}
+            required
+            
+        />*/
     return(
         <Radiobutton />
     )
